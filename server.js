@@ -8,3 +8,5 @@ app.use((req,res,next)=>{
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, ()=>{console.log('server started at port ' + PORT)});
+
+// sudo docker run -dit -p 8080:3000 -v $(pwd):/app:ro --name server_docker server:0.1
